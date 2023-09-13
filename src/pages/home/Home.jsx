@@ -29,22 +29,39 @@ const Home = () => {
 
   return (
     <div className="home">
-      <div className="banner">
-        <BannerMain />
-      </div>
-      {category.length === 0 && <div className="loading">Loading....</div>}
-      {category.map((cat) => (
-        <div className="slider_home" key={cat.id}>
-          <div className="category_slider">
-            <h1 className="title_category" style={{ backgroundColor: cat.cor }}>
-              {cat.title}
-            </h1>
-            <p>{cat?.link_extra?.text}</p>
-          </div>
-
-          <Carousel cat={cat} />
+      {category.length === 0 ? (
+        <div className="loading">
+          <div className="obj" />
+          <div className="obj" />
+          <div className="obj" />
+          <div className="obj" />
+          <div className="obj" />
+          <div className="obj" />
+          <div className="obj" />
+          <div className="obj" />
         </div>
-      ))}
+      ) : (
+        <>
+          <div className="banner">
+            <BannerMain />
+          </div>
+          {category.map((cat) => (
+            <div className="slider_home" key={cat.id}>
+              <div className="category_slider">
+                <h1
+                  className="title_category"
+                  style={{ backgroundColor: cat.cor }}
+                >
+                  {cat.title}
+                </h1>
+                <p>{cat?.link_extra?.text}</p>
+              </div>
+
+              <Carousel cat={cat} />
+            </div>
+          ))}
+        </>
+      )}
     </div>
   );
 };
