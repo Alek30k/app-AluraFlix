@@ -32,7 +32,7 @@ const Home = () => {
       <div className="banner">
         <BannerMain />
       </div>
-
+      {category.length === 0 && <div className="loading">Loading....</div>}
       {category.map((cat) => (
         <div className="slider_home" key={cat.id}>
           <div className="category_slider">
