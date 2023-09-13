@@ -1,0 +1,35 @@
+.carousel {
+  .container_video_card {
+  }
+}
+
+.control-btn .next,
+.control-btn .prev {
+  position: absolute;
+  top: 35%;
+  width: 40px;
+  height: 40px;
+  line-height: 60px;
+  cursor: pointer;
+  border-radius: 50%;
+  transform: 0.5s;
+  z-index: 5;
+}
+.control-btn .prev {
+  left: -20px;
+}
+.control-btn .next {
+  right: -20px;
+}
+.control-btn .prev i,
+.control-btn .next i {
+  font-size: 20px;
+  transition: 0.5s;
+  color: #fff;
+}
+// .control-btn .prev:hover,
+// .control-btn .next:hover {
+//   background: #e94560;
+//   color: white;
+//   cursor: pointer;
+// }

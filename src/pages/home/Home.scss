@@ -1,0 +1,20 @@
+.home {
+  .banner {
+    margin-bottom: 60px;
+  }
+  .slider_home {
+    margin-bottom: 50px;
+    .category_slider {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      gap: 20px;
+      .title_category {
+        color: white;
+        display: inline-block;
+        padding: 20px;
+        border-radius: 4px;
+      }
+    }
+  }
+}

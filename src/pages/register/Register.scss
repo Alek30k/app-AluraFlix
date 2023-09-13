@@ -1,0 +1,62 @@
+.register {
+  .form {
+    margin-bottom: 50px;
+    .inputs {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+
+      .input {
+        padding: 10px;
+        color: white;
+        background-color: #53585d;
+        border-radius: 4px;
+      }
+      ::placeholder {
+        color: #c2c2c2;
+      }
+      .input_color {
+        width: 100%;
+        height: 40px;
+        padding-top: 15px;
+        background-color: #53585d;
+      }
+      ::placeholder {
+        position: absolute;
+      }
+    }
+  }
+  .btns {
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+      gap: 20px;
+      display: flex;
+      .save {
+        width: 180px;
+        height: 54px;
+        flex-shrink: 0;
+        background-color: #2a7ae4;
+        color: #fff;
+      }
+      .delete {
+        width: 180px;
+        height: 54px;
+        flex-shrink: 0;
+        background-color: #9e9e9e;
+      }
+    }
+  }
+  .table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0px;
+
+    .table_head {
+      background-color: red;
+      // display: table-header-group;
+    }
+  }
+}

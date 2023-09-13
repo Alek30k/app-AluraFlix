@@ -1,0 +1,52 @@
+.bannerMain {
+  // height: calc(100vh - 94px);
+  position: relative;
+  color: #fff;
+  background-image: url("/src/assets/img/Banner.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+
+  .container {
+    margin-top: 15%;
+    display: flex;
+    width: 100%;
+
+    .title {
+      flex: 1;
+      padding: 30px;
+      h1 {
+        background-color: #6bd1ff;
+        display: flex;
+        width: 296px;
+        height: 92px;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: #f5f5f5;
+        text-align: center;
+      }
+      h2 {
+        font-size: 46px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      p {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
+    }
+
+    .video {
+      flex: 1;
+    }
+  }
+}

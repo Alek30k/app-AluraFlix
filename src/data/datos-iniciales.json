@@ -1,0 +1,142 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "titulo": "Front End",
+      "link": "https://www.alura.com.br/formacao-front-end",
+      "cor": "#6BD1FF",
+      "link_extra": {
+        "text": "Formación de Front End de Alura Latam",
+        "url": "https://www.alura.com.br/cursos-online-front-end"
+      },
+      "videos": [
+        {
+          "id": 1,
+          "titulo": "Cuándo usar let, var y const? ",
+          "url": "https://www.youtube.com/watch?v=PztCEdIJITY&t=635s&ab_channel=AluraLatam",
+          "img": "https://img.youtube.com/vi/PztCEdIJITY/hqdefault.jpg"
+        },
+        {
+          "id": 2,
+          "titulo": "¿Qué es JavaScript?",
+          "url": "https://www.youtube.com/watch?v=GJfOSoaXk4s&ab_channel=AluraLatam",
+          "img": "https://img.youtube.com/vi/GJfOSoaXk4s/hqdefault.jpg"
+        },
+        {
+          "id": 3,
+          "titulo": "¿Cómo un desarrollador Front End utiliza el Figma?",
+          "url": "https://www.youtube.com/watch?v=UuAX5azcvDQ&ab_channel=AluraLatam",
+          "img": "https://img.youtube.com/vi/UuAX5azcvDQ/hqdefault.jpg"
+        },
+        {
+          "id": 4,
+          "titulo": "Equipo Front End",
+          "url": "https://www.youtube.com/watch?v=rpvrLaBQwgg&ab_channel=AluraLatam",
+          "img": "https://img.youtube.com/vi/rpvrLaBQwgg/hqdefault.jpg"
+        },
+        {
+          "id": 5,
+          "titulo": "Frameworks de Front End - Edición especial",
+          "url": "https://www.youtube.com/watch?v=UNeKzI2WHgQ&ab_channel=AluraLatam",
+          "img": "https://img.youtube.com/vi/UNeKzI2WHgQ/hqdefault.jpg"
+        },
+        {
+          "id": 6,
+          "titulo": "Ser DESAROLLADOR FRONT END JUNIOR ¿Cuánto se gana? Desarrollo Front End",
+          "url": "https://www.youtube.com/watch?v=9_bmJdPKVaU&ab_channel=TrabajosTech",
+          "img": "https://img.youtube.com/vi/9_bmJdPKVaU/hqdefault.jpg"
+        },
+        {
+          "id": 7,
+          "titulo": "El FUTURO del Desarrollo FRONTEND en 2023",
+          "url": "https://www.youtube.com/watch?v=7REOUGel80Q&ab_channel=VictorRoblesWEB",
+          "img": "https://img.youtube.com/vi/7REOUGel80Q/hqdefault.jpg"
+        },
+        {
+          "id": 8,
+          "titulo": "Los roles en frontend - La mejor explicación en español",
+          "url": "https://www.youtube.com/watch?v=N8mFHB7JDkw&ab_channel=EDteam",
+          "img": "https://img.youtube.com/vi/N8mFHB7JDkw/hqdefault.jpg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Back End",
+      "cor": "#00C86F",
+      "link_extra": {
+        "text": "Formación Back End de Alura Latam",
+        "url": "https://www.alura.com.br/cursos-online-programacao",
+        "img": "https://img.youtube.com/vi/Uh-GNH-t89w/hqdefault.jpg"
+      },
+      "videos": [
+        {
+          "id": 9,
+          "titulo": "Spring Framework. ¿Qué es ? ",
+          "url": "https://www.youtube.com/watch?v=t-iqt1b2qqk&ab_channel=AluraLatam",
+          "img": "https://img.youtube.com/vi/t-iqt1b2qqk/hqdefault.jpg"
+        },
+        {
+          "id": 10,
+          "titulo": "¿Qué es SQL y NoSQL?",
+          "url": "https://www.youtube.com/watch?v=cLLKVd5CNLc&ab_channel=AluraLatam",
+          "img": "https://img.youtube.com/vi/cLLKVd5CNLc/hqdefault.jpg"
+        },
+        {
+          "id": 11,
+          "titulo": "Simplificando tu código en Java: Conoce los enum",
+          "url": "https://www.youtube.com/watch?v=EoPvlE85XAQ&ab_channel=AluraLatam",
+          "img": "https://img.youtube.com/vi/EoPvlE85XAQ/hqdefault.jpg"
+        },
+        {
+          "id": 12,
+          "titulo": "¡Las 4 tecnologías para conseguir EMPLEO como Back-End en 2023!",
+          "url": "https://www.youtube.com/watch?v=UAt-Ae1YVaA&ab_channel=OpenBootcamp",
+          "img": "https://img.youtube.com/vi/UAt-Ae1YVaA/hqdefault.jpg"
+        },
+        {
+          "id": 13,
+          "titulo": "Explorando el poder del Back-End en el Desarrollo Web",
+          "url": "https://www.youtube.com/watch?v=Z024LSCMqFk&ab_channel=AluraLatam",
+          "img": "https://img.youtube.com/vi/Z024LSCMqFk/hqdefault.jpg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Innovación y Gestión",
+      "cor": "#9cd33b",
+      "link_extra": {
+        "text": "Formación innovación de Alura Latam",
+        "url": "https://www.alura.com.br/formacao-data-science",
+        "img": "https://img.youtube.com/vi/Uh-GNH-t89w/hqdefault.jpg"
+      },
+      "videos": [
+        {
+          "id": 14,
+          "titulo": "¿Qué son las Soft Skills?",
+          "url": "https://www.youtube.com/watch?v=vhwspfvI52k&ab_channel=AluraLatam",
+          "img": "https://img.youtube.com/vi/vhwspfvI52k/hqdefault.jpg"
+        },
+        {
+          "id": 15,
+          "titulo": "7 Soft Skills más deseadas por las empresas",
+          "url": "https://www.youtube.com/watch?v=YhR7Zp8NUzE&ab_channel=AluraLatam",
+          "img": "https://img.youtube.com/vi/YhR7Zp8NUzE/hqdefault.jpg"
+        },
+        {
+          "id": 16,
+          "titulo": "¿Qué son las metodologias ágiles?",
+          "url": "https://www.youtube.com/watch?v=6N3OkLCfK-0&ab_channel=AluraLatam",
+          "img": "https://img.youtube.com/vi/6N3OkLCfK-0/hqdefault.jpg"
+        },
+        {
+          "id": 17,
+          "titulo": "Soft skills esenciales para el éxito profesional",
+          "url": "https://www.youtube.com/watch?v=PXxrF64ZJY8&ab_channel=Crehana",
+          "img": "https://img.youtube.com/vi/PXxrF64ZJY8/hqdefault.jpg"
+        }
+      ]
+    }
+  ]
+}
