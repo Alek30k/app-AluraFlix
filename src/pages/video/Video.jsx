@@ -4,63 +4,77 @@ import "./Video.scss";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
-const Video = ({ category, setCategory }) => {
-  console.log(category);
-  const [addVideo, setAddVideo] = useState({
-    title: "",
-    url: "",
-    img: "",
-    category: "",
-    password: "",
-  });
+const Video = ({ categorys }) => {
+  const [title, setTitle] = useState("");
+  const [url, setUrl] = useState("");
+  const [img, setImg] = useState("");
+  const [category, setCategory] = useState("");
 
-  // useEffect(()=>{
-  //   const fetchVideos = async () => {
-  //     try {
-  //       const res = await axios.post(
-  //         `http://localhost:8800/api/category/${category}`
-  //       );
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const filtered = categorys.find((c) => {
+        return c.title === category;
+      });
 
-  //       setAddVideo(res.data);
-
-  //       // console.log(res.data);
-  //     } catch (err) {
-  //       console.log(err);
-  //     }
-  //   };
-  //   fetchVideos();
-  // },[])
-
-  // const categoriaFind = category.find((categoria) => {
-  //   category.title === addVideo.category;
-  // });
-
-  // console.log(categoriaFind);
+      if (!filtered) {
+        alert("¡Elija una categoría existente o registre una diferente!");
+      } else {
+        const id = filtered._id;
+        await axios.post(`http://localhost:8800/api/video/${id}`, {
+          title,
+          url,
+          img,
+          category,
+        });
+        alert("Video agregado correctamente!");
+      }
+    } catch (err) {
+      console.log(err);
+    }
+  };
 
   return (
     <div className="video">
       <h1 className="title_video">Nuevo Video</h1>
-      <form className="form">
+      <form className="form" onSubmit={handleSubmit}>
         <div className="inputs">
-          <input type="text" placeholder="Titulo" name="title" />
-          <input type="text" placeholder="Link del video" name="url" />
-          <input type="text" placeholder="Link imagen del video" name="img" />
+          <input
+            type="text"
+            placeholder="Titulo"
+            name="title"
+            onChange={(e) => setTitle(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Link del video"
+            name="url"
+            onChange={(e) => setUrl(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Link imagen del video"
+            name="img"
+            onChange={(e) => setImg(e.target.value)}
+          />
           <input
             type="text"
             placeholder="Escoja una categoría"
             name="category"
-            // onChange={handleChange}
+            onChange={(e) => setCategory(e.target.value)}
           />
-          <input
+          {/* <input
             type="text"
             placeholder="Código de seguridad"
             name="password"
-          />
+          /> */}
         </div>
         <div className="btns">
           <div className="left">
             <div className="btn1">
-              <button className="save">Guardar</button>
+              <button className="save" type="submit">
+                Guardar
+              </button>
             </div>
             <div className="btn2">
               <button className="delete">Eliminar</button>

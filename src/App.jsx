@@ -10,7 +10,7 @@ import axios from "axios";
 
 function App() {
   // const sliders = data.categorias;
-  const [category, setCategory] = useState([]);
+  const [categorys, setCategorys] = useState([]);
   // console.log(category);
 
   useEffect(() => {
@@ -20,7 +20,7 @@ function App() {
           "http://localhost:8800/api/category/search"
         );
 
-        setCategory(res.data);
+        setCategorys(res.data);
 
         // console.log(res.data);
       } catch (err) {
@@ -53,11 +53,11 @@ function App() {
         },
         {
           path: "/addvideo",
-          element: <Video category={category} setCategory={setCategory} />,
+          element: <Video categorys={categorys} />,
         },
         {
           path: "/register",
-          element: <Register />,
+          element: <Register categorys={categorys} />,
         },
       ],
     },

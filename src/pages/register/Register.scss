@@ -15,14 +15,30 @@
       ::placeholder {
         color: #c2c2c2;
       }
-      .input_color {
-        width: 100%;
-        height: 40px;
-        padding-top: 15px;
-        background-color: #53585d;
-      }
-      ::placeholder {
-        position: absolute;
+
+      .label {
+        position: relative;
+        .input_color {
+          width: 100%;
+          height: 40px;
+          padding-left: 56px;
+          background-color: #53585d;
+        }
+        .spanColor {
+          color: white;
+          height: 20px;
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          display: flex;
+          -webkit-box-align: center;
+          align-items: center;
+          transform-origin: 0% 0%;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 300;
+          transition: all 0.1s ease-in-out 0s;
+        }
       }
     }
   }
@@ -53,10 +69,18 @@
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0px;
+    margin: 20px auto 50px;
+    border: 2px solid white;
+    border-radius: 10px;
 
     .table_head {
-      background-color: red;
+      background-color: #2a7ae4;
       // display: table-header-group;
+    }
+
+    .containerTable {
+      padding: 5px;
+      text-align: center;
     }
   }
 }

@@ -9,7 +9,7 @@ const Carousel = ({ cat }) => {
   const video = cat.videos;
   const categoryColor = cat.cor;
   // console.log(cat.cor);
-  console.log(video);
+  // console.log(video);
 
   const SampleNextArrow = (props) => {
     const { onClick } = props;

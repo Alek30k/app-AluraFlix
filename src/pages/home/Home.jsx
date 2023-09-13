@@ -39,7 +39,7 @@ const Home = () => {
             <h1 className="title_category" style={{ backgroundColor: cat.cor }}>
               {cat.title}
             </h1>
-            <p>{cat.link_extra.text}</p>
+            <p>{cat?.link_extra?.text}</p>
           </div>
 
           <Carousel cat={cat} />

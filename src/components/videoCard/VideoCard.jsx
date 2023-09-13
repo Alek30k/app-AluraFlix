@@ -3,7 +3,7 @@ import "./VideoCard.scss";
 import { Link } from "react-router-dom";
 
 const VideoCard = ({ videoURL, miniatura, videoTitle, categoryColor }) => {
-  console.log(videoTitle);
+  // console.log(videoTitle);
   return (
     <div className="video_card" style={{ borderColor: categoryColor || "red" }}>
       <Link to={`${videoURL}`}>
