@@ -7,6 +7,7 @@ import Footer from "./components/footer/Footer";
 import Register from "./pages/register/Register";
 import Video from "./pages/video/Video";
 import axios from "axios";
+import newRequest from "./utils/newRequest";
 
 function App() {
   // const sliders = data.categorias;
@@ -16,9 +17,7 @@ function App() {
   useEffect(() => {
     const fetchVideos = async () => {
       try {
-        const res = await axios.get(
-          "http://localhost:8800/api/category/search"
-        );
+        const res = await newRequest.get("/category/search");
 
         setCategorys(res.data);
 

@@ -1,4 +1,8 @@
 .register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   .title {
     display: flex;
     align-items: center;
@@ -6,6 +10,7 @@
     padding: 10px;
   }
   .form {
+    width: 50%;
     margin-bottom: 50px;
     .inputs {
       display: flex;
@@ -63,6 +68,7 @@
         color: #fff;
         border: none;
         border-radius: 5px;
+        font-size: 18px;
       }
     }
   }
@@ -77,6 +83,7 @@
 
     .table_head {
       background-color: #2a7ae4;
+      font-size: 18px;
       // display: table-header-group;
     }
 
