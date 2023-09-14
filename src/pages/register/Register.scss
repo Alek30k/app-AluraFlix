@@ -1,4 +1,10 @@
 .register {
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
   .form {
     margin-bottom: 50px;
     .inputs {
@@ -45,7 +51,7 @@
   .btns {
     display: flex;
     justify-content: space-between;
-
+    margin-top: 20px;
     .left {
       gap: 20px;
       display: flex;
@@ -55,18 +61,14 @@
         flex-shrink: 0;
         background-color: #2a7ae4;
         color: #fff;
-      }
-      .delete {
-        width: 180px;
-        height: 54px;
-        flex-shrink: 0;
-        background-color: #9e9e9e;
+        border: none;
+        border-radius: 5px;
       }
     }
   }
   .table {
     display: table;
-    width: 100%;
+    width: 50%;
     border-collapse: collapse;
     border-spacing: 0px;
     margin: 20px auto 50px;
@@ -79,8 +81,24 @@
     }
 
     .containerTable {
-      padding: 5px;
-      text-align: center;
+      // text-align: center;
+
+      .categoryRow {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 20px;
+        cursor: pointer;
+
+        .delete {
+          transition-duration: 0.3s;
+          padding: 5px;
+        }
+
+        :hover {
+          transform: scale(1.5);
+        }
+      }
     }
   }
 }

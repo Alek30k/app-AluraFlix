@@ -53,7 +53,7 @@ const Video = ({ categorys }) => {
           />
           <input
             type="text"
-            placeholder="Link imagen del video"
+            placeholder="Url imagen del video"
             name="img"
             onChange={(e) => setImg(e.target.value)}
           />
@@ -76,9 +76,9 @@ const Video = ({ categorys }) => {
                 Guardar
               </button>
             </div>
-            <div className="btn2">
+            {/* <div className="btn2">
               <button className="delete">Eliminar</button>
-            </div>
+            </div> */}
           </div>
           <div className="right">
             <Link to="/register">

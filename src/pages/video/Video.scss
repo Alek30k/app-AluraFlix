@@ -19,23 +19,12 @@
       ::placeholder {
         color: #c2c2c2;
       }
-      .desc {
-        height: 187px;
-        flex-shrink: 0;
-        background-color: #53585d;
-        padding-top: 1rem;
-        padding-left: 0.8rem;
-        max-height: 110px;
-        min-height: 110px;
-        max-width: 1%;
-        min-width: 100%;
-      }
     }
   }
   .btns {
     display: flex;
     justify-content: space-between;
-
+    margin-top: 20px;
     .left {
       gap: 20px;
       display: flex;
@@ -45,12 +34,11 @@
         flex-shrink: 0;
         background-color: #2a7ae4;
         color: #fff;
-      }
-      .delete {
-        width: 180px;
-        height: 54px;
-        flex-shrink: 0;
-        background-color: #9e9e9e;
+        border: none;
+        border-radius: 5px;
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 600;
       }
     }
     .right {
@@ -64,7 +52,8 @@
         line-height: 24px; /* 114.286% */
         width: 254px;
         height: 54px;
-        flex-shrink: 0;
+        border: none;
+        border-radius: 5px;
       }
     }
   }

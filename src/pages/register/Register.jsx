@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./Register.scss";
 import axios from "axios";
+// import { useNavigate } from "react-router-dom";
 
 const Register = ({ categorys }) => {
   const [title, setTitle] = useState("");
@@ -8,8 +9,10 @@ const Register = ({ categorys }) => {
   const [cor, setCor] = useState("");
   const [password, setPassword] = useState("");
 
+  // const navigate = useNavigate();
+
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     try {
       await axios.post("http://localhost:8800/api/category/addcategory", {
         title,
@@ -23,9 +26,19 @@ const Register = ({ categorys }) => {
     }
   };
 
+  const handleDelete = async (id) => {
+    try {
+      await axios.delete(`http://localhost:8800/api/category/${id}`);
+      alert("Categoría eliminada correctamente!");
+      // navigate("/register");
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   return (
     <div className="register">
-      <h1>Nuevo Categoria</h1>
+      <h1 className="title">Nueva Categoria</h1>
       <form className="form" onSubmit={handleSubmit}>
         <div className="inputs">
           <input
@@ -64,11 +77,6 @@ const Register = ({ categorys }) => {
             <div className="btn1">
               <button className="save">Guardar</button>
             </div>
-            <div className="btn2">
-              <button className="delete" type="submit">
-                Eliminar
-              </button>
-            </div>
           </div>
         </div>
       </form>
@@ -81,8 +89,15 @@ const Register = ({ categorys }) => {
         {categorys.map((cat) => (
           <>
             <tr className="containerTable">
-              <td>
+              <td className="categoryRow">
                 <p style={{ color: cat.cor }}>{cat.title}</p>
+                <span
+                  className="delete"
+                  style={{ color: cat.cor }}
+                  onClick={() => handleDelete(cat._id)}
+                >
+                  X
+                </span>
               </td>
             </tr>
           </>

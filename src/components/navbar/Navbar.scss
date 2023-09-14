@@ -25,10 +25,10 @@
       }
     }
     .right {
-      color: white;
       button {
+        background-color: transparent;
         color: white;
-        border: 1px solid red;
+        border: 1px solid rgb(243, 240, 240);
         box-sizing: border-box;
         cursor: pointer;
         padding: 16px 24px;
