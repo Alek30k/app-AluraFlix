@@ -71,3 +71,31 @@
     }
   }
 }
+
+@media screen and (max-width: 940px) {
+  .home {
+    .slider_home {
+      .category_slider {
+        .title_category {
+          padding: 10px;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .home {
+    .slider_home {
+      .category_slider {
+        .title_category {
+          padding: 10px;
+          font-size: 16px;
+        }
+        p {
+          display: none;
+        }
+      }
+    }
+  }
+}
