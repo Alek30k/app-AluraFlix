@@ -28,7 +28,7 @@ const Register = ({ categorys }) => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:8800/api/category/${id}`);
+      await axios.delete(`https://appflix.onrender.com/api/category/${id}`);
       alert("Categoría eliminada correctamente!");
     } catch (err) {
       console.log(err);
