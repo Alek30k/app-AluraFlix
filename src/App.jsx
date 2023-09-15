@@ -9,8 +9,9 @@ import Video from "./pages/video/Video";
 import axios from "axios";
 
 function App() {
-  // const sliders = data.categorias;
   const [categorys, setCategorys] = useState([]);
+
+  console.log(categorys);
 
   useEffect(() => {
     const fetchVideos = async () => {
@@ -20,8 +21,6 @@ function App() {
         );
 
         setCategorys(res.data);
-
-        // console.log(res.data);
       } catch (err) {
         console.log(err);
       }
