@@ -5,31 +5,10 @@ import Carousel from "../../components/carousel/Carousel";
 import "./Home.scss";
 import axios from "axios";
 
-const Home = () => {
-  // const sliders = data.categorias;
-  const [category, setCategory] = useState([]);
-  // console.log(category);
-
-  useEffect(() => {
-    const fetchVideos = async () => {
-      try {
-        const res = await axios.get(
-          "http://localhost:8800/api/category/search"
-        );
-
-        setCategory(res.data);
-
-        // console.log(res.data);
-      } catch (err) {
-        console.log(err);
-      }
-    };
-    fetchVideos();
-  }, []);
-
+const Home = ({ categorys }) => {
   return (
     <div className="home">
-      {category.length === 0 ? (
+      {categorys.length === 0 ? (
         <div className="loading">
           <div className="obj" />
           <div className="obj" />
@@ -45,7 +24,7 @@ const Home = () => {
           <div className="banner">
             <BannerMain />
           </div>
-          {category.map((cat) => (
+          {categorys.map((cat) => (
             <div className="slider_home" key={cat.id}>
               <div className="category_slider">
                 <h1

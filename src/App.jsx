@@ -47,7 +47,7 @@ function App() {
       children: [
         {
           path: "/",
-          element: <Home />,
+          element: <Home categorys={categorys} />,
         },
         {
           path: "/addvideo",
