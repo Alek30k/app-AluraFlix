@@ -9,7 +9,7 @@ const Register = ({ categorys }) => {
   const [password, setPassword] = useState("");
 
   const handleSubmit = async (e) => {
-    // e.preventDefault();
+    e.preventDefault();
     try {
       await axios.post(
         "https://appflix.onrender.com/api/category/addcategory",

@@ -34,6 +34,7 @@
           height: 40px;
           padding-left: 56px;
           background-color: #53585d;
+          cursor: pointer;
         }
         .spanColor {
           color: white;
@@ -55,20 +56,21 @@
   }
   .btns {
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+    justify-content: end;
+    margin-top: 50px;
     .left {
       gap: 20px;
       display: flex;
       .save {
         width: 180px;
-        height: 54px;
+        height: 50px;
         flex-shrink: 0;
         background-color: #2a7ae4;
         color: #fff;
         border: none;
         border-radius: 5px;
         font-size: 18px;
+        cursor: pointer;
       }
     }
   }
@@ -101,8 +103,7 @@
           transition-duration: 0.3s;
           padding: 5px;
         }
-
-        :hover {
+        .delete:hover {
           transform: scale(1.5);
         }
       }

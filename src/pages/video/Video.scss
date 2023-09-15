@@ -32,13 +32,14 @@
   .btns {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 60px;
+    gap: 50px;
     .left {
-      margin-right: 10px;
+      // margin-right: 10px;
       display: flex;
       .save {
         width: 180px;
-        height: 54px;
+        height: 50px;
         flex-shrink: 0;
         background-color: #2a7ae4;
         color: #fff;
@@ -47,6 +48,7 @@
         font-size: 18px;
         font-style: normal;
         font-weight: 600;
+        cursor: pointer;
       }
     }
     .right {
@@ -58,10 +60,11 @@
         font-style: normal;
         font-weight: 600;
         line-height: 24px; /* 114.286% */
-        width: 204px;
-        height: 54px;
+        width: 180px;
+        height: 50px;
         border: none;
         border-radius: 5px;
+        cursor: pointer;
       }
     }
   }

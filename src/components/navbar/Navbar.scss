@@ -5,7 +5,7 @@
   align-items: center;
   // justify-content: center;
   background: var(--black);
-  border-bottom: 2px solid var(--primary);
+  border-bottom: 2px solid rgb(141, 1, 1);
 
   .container {
     width: 1400px;
@@ -17,8 +17,8 @@
     .left {
       img {
         display: flex;
-        width: 168.45px;
-        height: 40px;
+        width: 200px;
+        height: 90px;
         justify-content: center;
         align-items: center;
         flex-shrink: 0;
