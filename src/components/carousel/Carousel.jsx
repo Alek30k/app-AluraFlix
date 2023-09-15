@@ -40,6 +40,7 @@ const Carousel = ({ cat }) => {
     slidesToScroll: 4,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    autoplay: true,
     responsive: [
       {
         breakpoint: 305,

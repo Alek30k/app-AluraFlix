@@ -4,6 +4,7 @@ import Carousel from "../../components/carousel/Carousel";
 // import data from "../../data/datos-iniciales.json";
 import "./Home.scss";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const Home = ({ categorys }) => {
   return (
@@ -33,7 +34,10 @@ const Home = ({ categorys }) => {
                 >
                   {cat.title}
                 </h1>
-                <p>{cat?.link_extra?.text}</p>
+
+                <Link to={`${cat?.link_extra?.url}`}>
+                  <p className="textDesc">{cat?.link_extra?.text}</p>
+                </Link>
               </div>
 
               <Carousel cat={cat} />
