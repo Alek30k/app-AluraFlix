@@ -49,11 +49,27 @@
     }
   }
 }
+@media screen and (max-width: 800px) {
+  .navbar {
+    // background-color: brown;
+    .container {
+      padding: 50px;
+      .left {
+        img {
+        }
+      }
+
+      .right {
+        button {
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 640px) {
   .navbar {
     // background-color: brown;
     .container {
-      // background-color: aqua;
       .left {
         img {
           width: 130px;
