@@ -16,7 +16,7 @@ const Carousel = ({ cat }) => {
     return (
       <div className="control-btn" onClick={onClick}>
         <button className="next">
-          <i className="fa fa-long-arrow-alt-right"></i>
+          <i class="fas fa-chevron-right"></i>
         </button>
       </div>
     );
@@ -26,7 +26,7 @@ const Carousel = ({ cat }) => {
     return (
       <div className="control-btn" onClick={onClick}>
         <button className="prev">
-          <i className="fa fa-long-arrow-alt-left"></i>
+          <i class="fas fa-chevron-left"></i>
         </button>
       </div>
     );
