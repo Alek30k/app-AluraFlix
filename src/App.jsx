@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Home from "./pages/home/Home";
@@ -7,17 +7,17 @@ import Footer from "./components/footer/Footer";
 import Register from "./pages/register/Register";
 import Video from "./pages/video/Video";
 import axios from "axios";
-import newRequest from "./utils/newRequest";
 
 function App() {
   // const sliders = data.categorias;
   const [categorys, setCategorys] = useState([]);
-  // console.log(category);
 
   useEffect(() => {
     const fetchVideos = async () => {
       try {
-        const res = await newRequest.get("/category/search");
+        const res = await axios.get(
+          "https://appflix.onrender.com/api/category/search"
+        );
 
         setCategorys(res.data);
 
