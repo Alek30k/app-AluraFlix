@@ -29,6 +29,21 @@
   color: rgb(65, 65, 200);
 }
 
+.slick-dots li button:before {
+  font-family: "slick";
+  font-size: 10px;
+  line-height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "•";
+  text-align: center;
+  opacity: 0.25;
+  color: white !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 @media screen and (max-width: 600px) {
   .control-btn .next,
   .control-btn .prev {

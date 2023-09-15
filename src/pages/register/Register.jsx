@@ -54,22 +54,20 @@ const Register = ({ categorys }) => {
           />
           <label htmlFor="color" className="label">
             <input
-              aria-invalid="false"
               id="color"
-              autoComplete="on"
               type="color"
               className="input_color"
               placeholder="Color"
               onChange={(e) => setCor(e.target.value)}
             />
-            <span className="spanColor"> color</span>
+            <span className="spanColor"> Color</span>
           </label>
-          <input
+          {/* <input
             className="input"
             type="text"
             placeholder="Código de seguridad"
             onChange={(e) => setPassword(e.target.value)}
-          />
+          /> */}
         </div>
         <div className="btns">
           <div className="left">

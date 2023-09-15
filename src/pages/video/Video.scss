@@ -8,10 +8,14 @@
   .title_video {
     color: var(----color-gray-light, #f5f5f5);
     text-align: center;
-    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 30px;
   }
   .form {
     margin-bottom: 50px;
+    border: 2px solid rgb(155, 139, 139);
+    padding: 40px;
+    border-radius: 10px;
 
     .inputs {
       display: flex;
@@ -21,8 +25,11 @@
       input {
         padding: 10px;
         color: white;
-        background-color: #53585d;
-        border-radius: 4px;
+        background-color: transparent;
+        outline: none;
+        border: 0;
+        width: 100%;
+        border-bottom: 1px solid #c2c2c2;
       }
       ::placeholder {
         color: #c2c2c2;

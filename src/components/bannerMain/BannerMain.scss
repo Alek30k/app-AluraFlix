@@ -1,15 +1,14 @@
 .bannerMain {
-  // height: calc(100vh - 94px);
+  height: calc(100vh - 94px);
   position: relative;
   color: #fff;
   background-image: url("/src/assets/img/Banner.png");
-  background-size: cover;
+  // background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   display: flex;
-  height: 90vh;
 
   .container {
-    // margin-top: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,9 +56,57 @@
 // ------------responsive-----------------
 
 @media screen and (max-width: 1536px) {
+  .bannerMain {
+    height: 500px;
+    .container {
+      margin-top: 0%;
+      align-items: center;
+
+      .video {
+        position: relative;
+        overflow: hidden;
+        width: 60%;
+        padding-top: 56.25%;
+
+        iframe {
+          position: absolute;
+          top: 10%;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          width: 100%;
+          height: 60%;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1280px) {
+  .bannerMain {
+    height: 500px;
+    .container {
+      margin-top: 0%;
+      align-items: center;
+
+      .video {
+        position: relative;
+        overflow: hidden;
+        width: 60%;
+        padding-top: 56.25%;
+
+        iframe {
+          position: absolute;
+          top: 10%;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          width: 100%;
+          height: 60%;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1224px) {
