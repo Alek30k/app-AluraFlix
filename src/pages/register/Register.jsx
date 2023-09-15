@@ -3,7 +3,7 @@ import axios from "axios";
 
 const Register = ({ categorys }) => {
   const [title, setTitle] = useState("");
-  const [urlCategory, setUrlCategoty] = useState("");
+  const [link, setLink] = useState("");
   const [cor, setCor] = useState("");
   const [password, setPassword] = useState("");
 
@@ -14,7 +14,7 @@ const Register = ({ categorys }) => {
         "https://appflix.onrender.com/api/category/addcategory",
         {
           title,
-          urlCategory,
+          link,
           cor,
           password,
         }
@@ -49,7 +49,7 @@ const Register = ({ categorys }) => {
             className="input"
             type="text"
             placeholder="Link Categoria"
-            onChange={(e) => setUrlCategoty(e.target.value)}
+            onChange={(e) => setLink(e.target.value)}
           />
           <label htmlFor="color" className="label">
             <input
