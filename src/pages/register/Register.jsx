@@ -1,15 +1,11 @@
-import { useState } from "react";
 import "./Register.scss";
 import axios from "axios";
-// import { useNavigate } from "react-router-dom";
 
 const Register = ({ categorys }) => {
   const [title, setTitle] = useState("");
   const [urlCategory, setUrlCategoty] = useState("");
   const [cor, setCor] = useState("");
   const [password, setPassword] = useState("");
-
-  // const navigate = useNavigate();
 
   const handleSubmit = async () => {
     // e.preventDefault();
@@ -33,7 +29,6 @@ const Register = ({ categorys }) => {
     try {
       await axios.delete(`http://localhost:8800/api/category/${id}`);
       alert("Categoría eliminada correctamente!");
-      // navigate("/register");
     } catch (err) {
       console.log(err);
     }
