@@ -1,5 +1,5 @@
 // import React from "react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./Video.scss";
 import { Link } from "react-router-dom";
 import axios from "axios";
@@ -21,7 +21,7 @@ const Video = ({ categorys }) => {
         alert("¡Elija una categoría existente o registre una diferente!");
       } else {
         const id = filtered._id;
-        await axios.post(`http://localhost:8800/api/video/${id}`, {
+        await axios.post(`https://appflix.onrender.com/api/video/${id}`, {
           title,
           url,
           img,

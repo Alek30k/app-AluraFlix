@@ -11,15 +11,18 @@ const Register = ({ categorys }) => {
 
   // const navigate = useNavigate();
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async () => {
     // e.preventDefault();
     try {
-      await axios.post("http://localhost:8800/api/category/addcategory", {
-        title,
-        urlCategory,
-        cor,
-        password,
-      });
+      await axios.post(
+        "https://appflix.onrender.com/api/category/addcategory",
+        {
+          title,
+          urlCategory,
+          cor,
+          password,
+        }
+      );
       alert("Categoría creada correctamente!");
     } catch (err) {
       console.log(err);
