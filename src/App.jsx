@@ -11,8 +11,6 @@ import axios from "axios";
 function App() {
   const [categorys, setCategorys] = useState([]);
 
-  console.log(categorys);
-
   useEffect(() => {
     const fetchVideos = async () => {
       try {
