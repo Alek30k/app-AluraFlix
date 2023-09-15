@@ -28,3 +28,10 @@
   transition: 0.5s;
   color: rgb(65, 65, 200);
 }
+
+@media screen and (max-width: 600px) {
+  .control-btn .next,
+  .control-btn .prev {
+    display: none;
+  }
+}
