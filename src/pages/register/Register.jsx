@@ -78,7 +78,9 @@ const Register = ({ categorys }) => {
         <div className="btns">
           <div className="left">
             <div className="btn1">
-              <button className="save">Crear</button>
+              <button className="save" type="submit">
+                Crear
+              </button>
             </div>
           </div>
         </div>
