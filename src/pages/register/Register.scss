@@ -140,29 +140,47 @@
   }
 }
 
-// @media screen and (max-width: 500px) {
-//   .register {
-//     .btns {
-//       .left {
-//         .save {
-//           width: 130px;
-//           height: 40px;
-//           font-size: 15px;
-//         }
-//       }
-//     }
-//     .table {
-//       .table_head {
-//       }
+@media screen and (max-width: 500px) {
+  .register {
+    .title_category {
+      font-size: 20px;
+      margin-top: 20px;
+      margin-bottom: 0px;
+    }
 
-//       .containerTable {
-//         .categoryRow {
-//           .delete {
-//           }
-//           .delete:hover {
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
+    .form {
+      border: transparent;
+    }
+    .btns {
+      .left {
+        .save {
+          width: 130px;
+          height: 40px;
+          font-size: 15px;
+        }
+      }
+      .right {
+        button {
+          width: 130px;
+          height: 40px;
+          font-size: 15px;
+        }
+      }
+    }
+
+    .table {
+      width: 100%;
+      .table_head {
+      }
+
+      .containerTable {
+        .categoryRow {
+          .delete {
+          }
+          .delete:hover {
+          }
+        }
+      }
+    }
+  }
+}
