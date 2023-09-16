@@ -63,11 +63,6 @@ const Video = ({ categorys }) => {
             name="category"
             onChange={(e) => setCategory(e.target.value)}
           />
-          {/* <input
-            type="text"
-            placeholder="Código de seguridad"
-            name="password"
-          /> */}
         </div>
         <div className="btns">
           <div className="left">
@@ -76,14 +71,6 @@ const Video = ({ categorys }) => {
                 Guardar
               </button>
             </div>
-            {/* <div className="btn2">
-              <button className="delete">Eliminar</button>
-            </div> */}
-          </div>
-          <div className="right">
-            <Link to="/register">
-              <button>Crear Categoría</button>
-            </Link>
           </div>
         </div>
       </form>

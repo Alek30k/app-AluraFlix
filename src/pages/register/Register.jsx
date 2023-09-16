@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./Register.scss";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const Register = ({ categorys }) => {
   const [title, setTitle] = useState("");
@@ -37,7 +38,7 @@ const Register = ({ categorys }) => {
 
   return (
     <div className="register">
-      <h1 className="title">Nueva Categoria</h1>
+      <h1 className="title_category">Nueva Categoria</h1>
       <form className="form" onSubmit={handleSubmit}>
         <div className="inputs">
           <input
@@ -62,12 +63,6 @@ const Register = ({ categorys }) => {
             />
             <span className="spanColor"> Color</span>
           </label>
-          {/* <input
-            className="input"
-            type="text"
-            placeholder="Código de seguridad"
-            onChange={(e) => setPassword(e.target.value)}
-          /> */}
         </div>
         <div className="btns">
           <div className="left">
@@ -76,6 +71,11 @@ const Register = ({ categorys }) => {
                 Crear
               </button>
             </div>
+          </div>
+          <div className="right">
+            <Link to="/video">
+              <button>Crear Video</button>
+            </Link>
           </div>
         </div>
       </form>
