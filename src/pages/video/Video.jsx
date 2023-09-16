@@ -72,6 +72,11 @@ const Video = ({ categorys }) => {
               </button>
             </div>
           </div>
+          <div className="right">
+            <Link to="/register">
+              <button>Crear Categoría</button>
+            </Link>
+          </div>
         </div>
       </form>
     </div>
